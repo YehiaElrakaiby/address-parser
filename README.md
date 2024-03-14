@@ -31,9 +31,10 @@ i) Obtain a pre filled training config which has the required training parameter
 ii) Build spacy-docbin (binary serialized representation) files for training and test dataset.
 
 **Pre filled training config**:   Below command can be executed from command-line to get a pre filled config file. This would take as input the **base_config.cfg** file and churn out the pre filled training config file: **config.cfg**.
->python -m spacy init fill-config config\base_config.cfg config\config.cfg
+>python -m spacy init fill-config config/base_config.cfg config/config.cfg
 
 Similarly, to get entity-ruler based config, pointing this command to the **base_config_er.cfg** would churn out the pre filled config : **config_er.cfg**
+>python -m spacy init fill-config config/base_config_er.cfg config/config_er.cfg
 
 **Prepare spacy-docbins**: Finally, a spacy-docbin file can be obtained by executing [training_data_prep.py](https://github.com/swapnil-saxena/address-parser/blob/main/training_data_prep.py).
 >python training_data_prep.py

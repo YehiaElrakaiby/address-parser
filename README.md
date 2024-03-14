@@ -46,7 +46,7 @@ This would take raw csv [training/test datasets](https://github.com/swapnil-saxe
 # Training loop execution
 
 To start the training process, below train command can be executed:
->**python -m spacy train config\config.cfg --paths.train corpus\spacy-docbins\train.spacy --paths.dev corpus\spacy-docbins\test.spacy --output output\models --training.eval_frequency 10 --training.max_steps 300**
+>**python -m spacy train config/config.cfg --paths.train corpus/spacy-docbins/train.spacy --paths.dev corpus/spacy-docbins/test.spacy --output output/models --training.eval_frequency 10 --training.max_steps 300**
 
 This saves the output NER models under [output](https://github.com/swapnil-saxena/address-parser/tree/main/output) folder.
 
